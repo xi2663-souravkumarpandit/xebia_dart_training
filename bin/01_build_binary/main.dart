@@ -1,8 +1,4 @@
-class WannabeFunction {
-  String call(String a, String b, String c) => '$a $b $c!';
+void main() {
+  final name = 'hello';
+  assert(name.isNotEmpty);
 }
-
-var wf = WannabeFunction();
-var out = wf('Hi', 'there,', 'gang');
-
-void main() => print(out);

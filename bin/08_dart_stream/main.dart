@@ -8,7 +8,7 @@ void main() async {
   var stream = streamController.stream;
 
   // Listen to the stream for events
-  var subscription = stream.listen((data) {
+  final subscription = stream.listen((data) {
     print('Received: $data');
   });
 
