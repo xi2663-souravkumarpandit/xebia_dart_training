@@ -1,6 +1,6 @@
 import 'dart:async';
 
-void main() {
+void main() async {
   // Create a StreamController to manage the stream
   var streamController = StreamController<int>();
 
@@ -14,7 +14,9 @@ void main() {
 
   // Add data to the stream
   streamController.add(1);
+  await Future.delayed(Duration(seconds: 1));
   streamController.add(2);
+  await Future.delayed(Duration(seconds: 1));
   streamController.add(3);
 
   // Close the StreamController when done to release resources
